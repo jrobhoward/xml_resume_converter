@@ -20,34 +20,26 @@
 		<startDate>January 2013</startDate>
 		<endDate>Present</endDate>
 		<responsiblities>
-			<responsiblity>Software design, development, and build process improvements related to Dell Storage Manager and Storage Center</responsiblity>
+			<responsiblity>Software design, development, and build process improvements related to Dell Storage Manager and Storage Center products</responsiblity>
 			<responsiblity>Design and planning of a Dell Storage Manager HA (High Availability) configuration</responsiblity>
 		</responsiblities>
 		<accomplishments>
 			<accomplishment>
-				<accomplishmentId>DSM Evolution</accomplishmentId>
-				<description>Updated Dell Storage Manager platform from {GlassFish -&gt; JBoss -&gt; Wildfly} and {Java6 -&gt; Java7 &gt; Java8} across DSM releases, without adversely impacting other developers or the schedule</description>
+				<accomplishmentId>Dell Storage Manager (DSM) Evolution</accomplishmentId>
+				<description>Updated DSM platform from {GlassFish -&gt; JBoss -&gt; Wildfly} and {Java6 -&gt; Java7 &gt; Java8} across DSM releases, without adversely impacting other developers or the schedule</description>
 			</accomplishment>
 			<accomplishment>
 				<accomplishmentId>Virtual Appliance</accomplishmentId>
-				<description>Leveraged Jenkins CI and vSphere Web Services to produce
-automated virtual appliance builds of Dell Storage Manager and Storage Center</description>
+				<description>Leveraged Jenkins CI, Gradle, and vSphere Web Services to produce automated virtual appliance builds of Dell Storage Manager and Storage Center</description>
 			</accomplishment>
 			<accomplishment>
-				<accomplishmentId>Build Improvments</accomplishmentId>
-				<description>Converted DSM build processes from Ant to Gradle, making the
-build more consistent and easier to maintain</description>
-			</accomplishment>
-			<accomplishment>
-				<accomplishmentId>Developer Automation</accomplishmentId>
+				<accomplishmentId>Developer Tools Automation</accomplishmentId>
 				<description>Wrote an Eclipse plugin to automate the creation of
-development environments, reducing several hours of manual steps to under 20
-minutes</description>
+a DSM development environment, reducing several hours of manual steps to a single automated step</description>
 			</accomplishment>
 			<accomplishment>
 				<accomplishmentId>Logger Refactoring</accomplishmentId>
-				<description>Replaced Dell Storage Manager's custom logging
-implementation with log4j, increasing logging performance 100x</description>
+				<description>Replaced DSM's legacy logging implementation with log4j, increasing logging performance 100x</description>
 			</accomplishment>
 			<accomplishment>
 				<accomplishmentId>PAM Library</accomplishmentId>
@@ -63,29 +55,24 @@ DSM virtual appliance</description>
 		<startDate>May 2000</startDate>
 		<endDate>January 2013</endDate>
 		<responsiblities>
-			<responsiblity>Design and implementation of custom enhancements on top of Spectrum Power 3 (a
-highly-available, redundant, Energy Management System) to meet customer
-requirements</responsiblity>
-			<responsiblity>Planning the deployment process and supported configurations for current and future
-Spectrum releases</responsiblity>
-			<responsiblity>Creating and maintaining technical documentation (e.g. design specifications,
+			<responsiblity>Design and implementation of EMS enhancements to Spectrum Power 3 (a
+highly-available, redundant, Energy Management System) to meet customer specifications</responsiblity>
+			<responsiblity>Creation and maintenance of technical documentation (e.g. design specifications,
 installation &amp; maintenance documents, performance tuning guides)</responsiblity>
 			<responsiblity>Technical consulting for project managers and customers</responsiblity>
-			<responsiblity>Analysis and resolution of software, operating system, network, and security problems</responsiblity>
+			<responsiblity>Troubleshooting software, operating system, network, and security problems</responsiblity>
 			<responsiblity>Mentoring less experienced coworkers</responsiblity>
 			<responsiblity>On-site installation and direct customer support of Spectrum Power 3</responsiblity>
 			<responsiblity>UNIX installation and maintenance (AIX, Linux)</responsiblity>
-			<responsiblity>Oracle 11g (RAC, Data Guard) installation and maintenance</responsiblity>
+			<responsiblity>Oracle (RAC, Data Guard) installation &amp; maintenance</responsiblity>
 			<responsiblity>Source code merges and builds</responsiblity>
 		</responsiblities>
 		<accomplishments>
 			<accomplishment>
 				<accomplishmentId>Installation Automation</accomplishmentId>
-				<description>In 2012, I modeled the data required for Spectrum installation
-into an XML file and wrote tools for semantic validation and data extraction. When
-completed, the 100+ page install document will be replaced with a much smaller install
-guide (&lt;5 pages). System installations will be automated and yield consistent results,
-regardless of the ability/experience of the person performing the installation</description>
+				<description>In 2012, I modeled all information necessary for Spectrum installation
+into an XML file and wrote tools for semantic validation and data extraction. Once completed, the product's
+100+ page install document can be replaced with a much smaller install guide (&lt;5 pages). System installations can be automated and yield consistent results</description>
 			</accomplishment>
 		</accomplishments>
 		<accomplishments>
@@ -97,25 +84,15 @@ technologies; reducing the cost of development systems by 60%</description>
 		</accomplishments>
 		<accomplishments>
 			<accomplishment>
-				<accomplishmentId>Web Applications</accomplishmentId>
-				<description>I designed and implemented several web applications using PHP
-and PostgreSQL on Linux. One tool is still being used for transmittals (official
-correspondence between Siemens Energy and our customers). Another tool is used to
-track customer defects</description>
-			</accomplishment>
-		</accomplishments>
-		<accomplishments>
-			<accomplishment>
 				<accomplishmentId>LAN Teaming</accomplishmentId>
-				<description>I modernized Spectrum's network configuration to use a dualsegmented
-network for redundancy. The previous/legacy network redundancy design
-required two completely independent networks and a software daemon used to reroute
-TCP/IP. As a result, fail-over time decreased from 30 seconds to under 1 second.</description>
+				<description>I modernized Spectrum's network configuration to use a dual-segmented
+network for redundancy. The prior/legacy design required two independent networks and a
+software daemon used to reroute TCP/IP. As a result, fail-over time on Spectrum systems decreased from thirty seconds to under one second</description>
 			</accomplishment>
 		</accomplishments>
 		<accomplishments>
 			<accomplishment>
-				<accomplishmentId>Split-room Configuration</accomplishmentId>
+				<accomplishmentId>Spectrum Split-room</accomplishmentId>
 				<description>I designed an enhancement allowing one of our customers to
 geographically separate their EMS system (with ½ of their active hosts running at one
 site, and the other ½ running approximately 20 miles away). My role during
@@ -132,7 +109,7 @@ Spectrum hosts {CPU/memory usage, excessive paging, NIC errors or excessive
 network bandwidth consumption, application failures}. Various additional aspects of
 the system are also monitored {SQL database availability, network switch/router status,
 SAN status, print queues}. This application generates EMS alarms when problems are
-identified, and uses minimal system resources.</description>
+identified, and uses minimal system resources</description>
 			</accomplishment>
 		</accomplishments>
 		<accomplishments>
@@ -141,16 +118,16 @@ identified, and uses minimal system resources.</description>
 				<description>I rewrote the communication equipment status display for
 one of our customers to meet their requirements. The updated display was written in
 Java, and can be invoked as a traditional application or via their intranet using Java
-Web Start.</description>
+Web Start</description>
 			</accomplishment>
 		</accomplishments>
 		<accomplishments>
 			<accomplishment>
 				<accomplishmentId>UI Prototype</accomplishmentId>
-				<description>I designed a prototype for a replacement UI using Java/Swing and the
+				<description>I designed a prototype for a replacement UI using Java/Swing, based on the
 NetBeans Platform. Although it was deemed &quot;impressive&quot;, a decision was made by our
 architects to continue using technologies our division is already comfortable with (QT,
-ActiveX, HTML/JavaScript).</description>
+ActiveX, HTML/JavaScript)</description>
 			</accomplishment>
 		</accomplishments>
 	</workExperience>
@@ -229,30 +206,25 @@ ActiveX, HTML/JavaScript).</description>
 	<projects>
 		<project>
 			<name>Photo Kiosk</name>
-			<info>I designed and coded the software component of a photo kiosk used in many of my
-friends' weddings.</info>
-			<info>An SLR camera and dual printers are controlled by an OS X (Cocoa) application.</info>
-			<info>The user interface is presently implemented as an interactive touchscreen (staticallymounted
-iPod touch). After a picture is taken, the photo kiosk user(s) are presented
-with their picture; they can elect to print or retry.</info>
-			<info>Previous (non-touchscreen) user interfaces were implemented using Apple &amp; Wii
-remote controls.</info>
-			<info>The software is extensible. Custom layouts/plugins can be designed using Quartz
-Composer, eliminating the need to modify source code.</info>
+			<info>I designed and coded the software component of a photo kiosk</info>
+			<info>An SLR camera and dual printers are controlled by an OS X (Cocoa) application</info>
+			<info>An interactive touchscreen (iOS) serves as the user interface</info>
+			<info>Previous (non-touchscreen) user interfaces were implemented using Apple (infrared) &amp; Wii (bluetooth)
+remote controls</info>
+			<info>The software is extensible. Custom text &amp; print layouts can be designed using Quartz
+Composer, eliminating the need to modify source code</info>
 		</project>
 		<project>
 			<name>SCADAbase</name>
-			<info>As part of my MSSE independent study, I designed and implemented a working
-prototype for SCADA middleware.</info>
-			<info>The software was written in Erlang.</info>
-			<info>A Java (NetBeans Platform) client connects using CORBA.</info>
-			<info>Jenkins was used for Continuous Integration and execution of automated unit
-tests</info>
-			<info>Failover and hot-code update capabilities were demonstrated to my classmates.</info>
+			<info>As part of my MSSE independent study, I designed and implemented a working prototype for SCADA middleware</info>
+			<info>The software was written in Erlang</info>
+			<info>A Java (NetBeans Platform) client acts as the UI, accessing a CORBA service</info>
+			<info>Jenkins was used for Continuous Integration builds &amp; execution of automated unit tests</info>
+			<info>Node fail-over and hot-code update capabilities were demonstrated to my classmates</info>
 		</project>
 		<project>
 			<name>XML-based Resume</name>
-			<info>Uses FOP to convert an XML-based resume into print quality PDF</info>
+			<info>The tool uses Apache FOP to generate a print quality PDF from XML data</info>
 		</project>
 	</projects>
 </resume>
