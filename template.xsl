@@ -10,7 +10,6 @@
       <fo:page-sequence master-reference="usLetter">
         <fo:flow flow-name="xsl-region-body">
           <fo:block font-family="Meera" font-size="36">
-            <fo:external-graphic content-height="scale-to-fit" content-width="scale-to-fit" height="40pt" src="from_right.png" width="40pt"/>
             <fo:leader leader-length="1mm"/>
             <xsl:value-of select="contactInfo/name"/>
           </fo:block>
@@ -68,7 +67,8 @@
             <fo:block border-top-style="solid" space-after="2mm" space-before="2mm" text-align="center"/>
             <fo:table border-collapse="separate" table-layout="fixed" width="100%">
               <fo:table-column column-width="2.5cm"/>
-              <fo:table-column column-width="15cm"/>
+              <fo:table-column column-width="13cm"/>
+              <fo:table-column column-width="2.5cm"/>
               <fo:table-body>
                 <xsl:apply-templates select="contactInfo"/>
               </fo:table-body>
@@ -144,7 +144,7 @@
           <xsl:for-each select="responsiblities/responsiblity">
             <fo:list-item>
               <fo:list-item-label end-indent="label-end()">
-                <fo:block font-weight="bold">→</fo:block>
+                <fo:block font-weight="bold" font-family="Hack">▶</fo:block>
               </fo:list-item-label>
               <fo:list-item-body start-indent="body-start()">
                 <fo:block>
@@ -159,7 +159,7 @@
           <xsl:for-each select="accomplishments/accomplishment">
             <fo:list-item>
               <fo:list-item-label end-indent="label-end()">
-                <fo:block font-weight="bold">→</fo:block>
+                <fo:block font-weight="bold" font-family="Hack">▶</fo:block>
               </fo:list-item-label>
               <fo:list-item-body start-indent="body-start()">
                 <fo:block font-style="italic">
@@ -230,7 +230,7 @@
             <xsl:for-each select="info">
               <fo:list-item>
                 <fo:list-item-label end-indent="label-end()">
-                  <fo:block font-weight="bold">→</fo:block>
+                  <fo:block font-weight="bold" font-family="Hack">▶</fo:block>
                 </fo:list-item-label>
                 <fo:list-item-body start-indent="body-start()">
                   <fo:block>
@@ -327,6 +327,12 @@
             </fo:list-item-body>
           </fo:list-item>
         </fo:list-block>
+      </fo:table-cell>
+      <fo:table-cell>
+        <xsl:attribute name="font-weight">bold</xsl:attribute>
+        <fo:block>
+            <fo:external-graphic content-height="scale-to-fit" content-width="scale-to-fit" height="2cm" src="from_right.png" width="2cm"/>
+      </fo:block>
       </fo:table-cell>
     </fo:table-row>
   </xsl:template>
